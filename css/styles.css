@@ -919,7 +919,7 @@ p.footer-email-title {
 .checkbox:checked + .icon {
   border-color: transparent;
   background-color: #188ce8;
-  background-image: url(/images/checkbox.svg);
+  background-image: url(../images/checkbox.svg);
   background-size: contain;
   background-origin: content-box;
   background-position: center;
