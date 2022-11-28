@@ -682,6 +682,9 @@ button.modal-button {
   border: 1px solid silver;
   border-radius: 47px;
   cursor: pointer;
+  transition: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-function);
 }
 /**/
 .item_portfolio p {
@@ -728,7 +731,7 @@ h2.modal-title {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-title-color);
-  margin-bottom: 2px;
+  margin-bottom: 12px;
 }
 input {
   width: 100%;
@@ -788,10 +791,10 @@ span.icon {
   width: 16px;
   height: 15px;
   margin-left: 10px;
-  border: 2px solid #212121;
-  border-radius: 4px;
+  border: 1.5px solid #212121;
+  border-radius: 2px;
 }
-label.checkbox-label {
+span.checkbox-label {
   position: relative;
   padding-left: 7px;
   font-weight: 400;
@@ -801,7 +804,7 @@ label.checkbox-label {
   color: var(--primary-text-color);
   cursor: pointer;
 }
-.checkbox-label a {
+span.checkbox-label a {
   color: var(--primery-hover-color);
   text-decoration: underline;
 }
@@ -809,8 +812,8 @@ label.checkbox-label {
   display: inline-flex;
   align-items: center;
 }
-.form-checkbox {
-  margin-bottom: 30px;
+button.form-button {
+  margin-top: 30px;
 }
 .form-button {
   margin: 0 auto;
@@ -834,6 +837,11 @@ label.checkbox-label {
   transition-duration: 250ms;
   transition-timing-function: var(--transition-function);
   cursor: pointer;
+}
+label.person-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form-button:hover,
 .form-button:focus {
